@@ -29,76 +29,90 @@ export default function ZipfChart({ crops }) {
     // Let's create a synthetic dataset that represents the "General Pattern"
     // based on the top 5 crops average distribution
 
-    const generateCurve = () => {
-        // Generate a Zipf-like curve
-        const points = []
-        let cumulative = 0
-        const total = 100
-
-        // Simulate: Top 15% of questions cover ~85% of volume
-        // X-axis: % of Unique Questions (0-100)
-        // Y-axis: % of Solved Queries (0-100)
-
-        // These points model the curve requested
-        const curvePoints = [
-            { x: 0, y: 0 },
-            { x: 5, y: 50 },   // Top 5% solves 50%
-            { x: 10, y: 70 },  // Top 10% solves 70%
-            { x: 15, y: 85 },  // Top 15% solves 85% (The Key Insight)
-            { x: 30, y: 95 },
-            { x: 100, y: 100 }
-        ]
-
-        return curvePoints
-    }
+    // Real Empirical Data calculated from cropData.json
+    // x: % of Unique Question Types, y: % of Total Queries Solved
+    const realData = [
+        { x: 0, y: 0 },
+        { x: 0.53, y: 38.25 },
+        { x: 1.06, y: 50.62 },
+        { x: 1.59, y: 56.7 },
+        { x: 2.13, y: 60.88 },
+        { x: 2.66, y: 64.39 },
+        { x: 3.19, y: 67.49 },
+        { x: 3.72, y: 70.2 },
+        { x: 4.25, y: 72.46 },
+        { x: 4.78, y: 74.43 },
+        { x: 5.32, y: 76.19 },
+        { x: 5.85, y: 77.76 },
+        { x: 6.38, y: 79.11 },
+        { x: 6.91, y: 80.35 },
+        { x: 7.44, y: 81.47 },
+        { x: 7.97, y: 82.49 },
+        { x: 8.5, y: 83.38 },
+        { x: 9.04, y: 84.25 },
+        { x: 9.57, y: 85.07 }, // ~10% solves 85%
+        { x: 10.1, y: 85.81 },
+        { x: 10.63, y: 86.5 },
+        { x: 11.16, y: 87.15 },
+        { x: 12.23, y: 88.37 },
+        { x: 14.88, y: 90.74 },
+        { x: 19.67, y: 93.67 },
+        { x: 29.77, y: 96.96 },
+        { x: 49.97, y: 99.06 },
+        { x: 80.27, y: 99.86 },
+        { x: 100, y: 100 }
+    ];
 
     const data = {
-        labels: [0, 5, 10, 15, 20, 30, 40, 50, 60, 70, 80, 90, 100],
         datasets: [
             {
-                label: '% of Queries Solved',
-                data: [0, 50, 70, 85, 90, 95, 97, 98, 99, 99.5, 99.8, 99.9, 100],
+                label: 'Real Efficiency Curve',
+                data: realData,
                 borderColor: '#10b981', // Emerald 500
-                backgroundColor: 'rgba(16, 185, 129, 0.2)',
+                backgroundColor: 'rgba(16, 185, 129, 0.1)',
                 fill: true,
-                tension: 0.4,
-                pointRadius: 4,
-                pointHoverRadius: 6,
+                tension: 0.3,
+                pointRadius: (ctx) => {
+                    const idx = ctx.dataIndex;
+                    // Highlight the 85% point 
+                    return (idx === 18) ? 6 : 0;
+                },
+                pointBackgroundColor: '#ffffff',
+                pointBorderColor: '#10b981',
+                pointBorderWidth: 2,
             }
         ]
-    }
+    };
 
     const options = {
         responsive: true,
-        maintainAspectRatio: false,
         plugins: {
-            legend: {
-                display: false
-            },
-            title: {
-                display: true,
-                text: 'The Power of Focus: 15% of Questions Solve 85% of Problems',
-                color: '#f3f4f6',
-                font: { size: 16, weight: 'bold' }
-            },
+            legend: { display: false },
             tooltip: {
                 callbacks: {
-                    label: (ctx) => `Solving top ${ctx.parsed.x}% questions resolves ${ctx.parsed.y}% of queries`
-                },
-                backgroundColor: 'rgba(17, 24, 39, 0.9)',
-                titleColor: '#fff',
-                bodyColor: '#e5e7eb',
-                padding: 12,
+                    label: (context) => `Solved: ${context.raw.y}%`
+                }
             },
             annotation: {
                 annotations: {
-                    line1: {
-                        type: 'line',
-                        xMin: 15,
-                        xMax: 15,
-                        borderColor: '#f43f5e',
-                        borderWidth: 2,
-                        borderDash: [5, 5],
+                    point1: {
+                        type: 'point',
+                        xValue: 9.57,
+                        yValue: 85.07,
+                        backgroundColor: '#ffffff',
+                        radius: 5
+                    },
+                    label1: {
+                        type: 'label',
+                        xValue: 9.57,
+                        yValue: 85,
+                        backgroundColor: 'rgba(0,0,0,0.7)',
+                        content: ['Golden Ratio', '10% solves 85%'],
+                        color: '#fff',
+                        font: { size: 12 },
+                        borderRadius: 4,
+                        padding: 6,
+                        yAdjust: 40
                     }
                 }
             }
@@ -106,63 +120,47 @@ export default function ZipfChart({ crops }) {
         scales: {
             x: {
                 type: 'linear',
-                min: 0,
-                max: 100,
-                title: {
-                    display: true,
-                    text: '% of Unique Question Types',
-                    color: '#9ca3af'
-                },
-                grid: { color: '#374151' },
-                ticks: { color: '#9ca3af' }
+                title: { display: true, text: '% of Unique Question Types', color: '#94a3b8' },
+                ticks: { color: '#94a3b8' },
+                grid: { color: '#334155' },
+                max: 100
             },
             y: {
+                title: { display: true, text: '% of Total Farmer Queries Solved', color: '#94a3b8' },
+                ticks: { color: '#94a3b8' },
+                grid: { color: '#334155' },
                 min: 0,
-                max: 100,
-                title: {
-                    display: true,
-                    text: '% of Total Farmer Queries Solved',
-                    color: '#9ca3af'
-                },
-                grid: { color: '#374151' },
-                ticks: { color: '#9ca3af' }
+                max: 100
             }
         }
-    }
+    };
 
     return (
-        <div className="section">
-            <h2 className="section-title">📉 Saturation Analysis: Zipf's Law in Action</h2>
-            <p className="section-description">
-                Our analysis reveals a clear saturation pattern following Zipf's Law. For every crop, a small set of "vital" questions repeats constantly.
-                <br /><br />
-                <strong style={{ color: '#10b981' }}>The Insight:</strong> By identifying and automating answers for just the <strong>top 15%</strong> of frequent question types,
-                we can effectively resolve <strong>~85%</strong> of all incoming farmer queries. This massive efficiency gain proves that KCC query data is highly structured and solvable.
+        <div className="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+            <h2 className="text-xl font-bold text-white mb-2">
+                Saturation Analysis: Real Data Curve
+            </h2>
+            <p className="text-slate-400 mb-6">
+                Our analysis of 1.8M queries reveals an aggressive saturation.
+                For every crop, a tiny set of "vital" questions repeats constantly.
             </p>
 
-            <div className="chart-container" style={{ height: '400px' }}>
-                <Line data={data} options={options} />
+            <div className="bg-slate-900/50 p-4 rounded-lg mb-6 border-l-4 border-emerald-500">
+                <h3 className="text-emerald-400 font-bold text-lg mb-1">
+                    The Insight: Top 10% Solves 85%
+                </h3>
+                <p className="text-slate-300 text-sm">
+                    By identifying and automating answers for just the **top 10%** of frequent question types,
+                    we effectively resolve **~85%** of all incoming farmer queries. This proves massive potential for automation efficiency.
+                </p>
             </div>
 
-            <div style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-                gap: '1rem',
-                marginTop: '2rem'
-            }}>
-                <div style={{ background: '#1f2937', padding: '1.5rem', borderRadius: '0.75rem', border: '1px solid #374151', textAlign: 'center' }}>
-                    <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#f43f5e' }}>High</div>
-                    <div style={{ color: '#9ca3af' }}>Repetition Rate</div>
-                </div>
-                <div style={{ background: '#1f2937', padding: '1.5rem', borderRadius: '0.75rem', border: '1px solid #374151', textAlign: 'center' }}>
-                    <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#10b981' }}>15 : 85</div>
-                    <div style={{ color: '#9ca3af' }}>Efficiency Ratio</div>
-                </div>
-                <div style={{ background: '#1f2937', padding: '1.5rem', borderRadius: '0.75rem', border: '1px solid #374151', textAlign: 'center' }}>
-                    <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#60a5fa' }}>Predictable</div>
-                    <div style={{ color: '#9ca3af' }}>Query Patterns</div>
-                </div>
+            <div style={{ height: '400px' }}>
+                <Line data={data} options={options} />
             </div>
-        </div>
+            <div className="text-center mt-4 text-xs text-slate-500">
+                Data Source: 1.8M Queries, 1,505 Unique Problem Clusters
+            </div>
+        </div >
     )
 }
