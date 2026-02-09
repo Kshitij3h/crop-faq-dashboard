@@ -4,10 +4,13 @@ Your dashboard is configured for zero-config deployment on Railway.
 
 ## Option 1: Using GitHub (Recommended)
 
-1. **Commit and Push** your code to a GitHub repository.
+1. **Push your code** to one of these repositories:
+   - [Kshitij3h/crop-faq-dashboard](https://github.com/Kshitij3h/crop-faq-dashboard)
+   - [vicharanashala/crop-faq-dashboard](https://github.com/vicharanashala/crop-faq-dashboard)
+
 2. Go to **[Railway Dashboard](https://railway.app)**.
 3. Click "New Project" -> "Deploy from GitHub repo".
-4. Select your repository.
+4. Select the repository you pushed to.
 5. Railway will automatically detect the `Dockerfile` and `package.json` and deploy it.
 
 ## Option 2: Using Railway CLI
@@ -21,7 +24,8 @@ If you have the Railway CLI installed:
 
 2. Initialize and Deploy:
    ```bash
-   cd "outputs/dashboard/crop-faq-dashboard"
+   # Navigate to project root
+   cd dashboards
    railway init
    railway up
    ```
