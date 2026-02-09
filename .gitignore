@@ -16,7 +16,7 @@ dist-ssr
 *.local
 
 # Data files (large JSON files with crop data)
-src/data/*.json
+# src/data/*.json  <-- Commented out to allow Vercel build
 *.json.bak
 
 # Editor directories and files

@@ -1,0 +1,816 @@
+{
+  "metadata": {
+    "total_queries": 7435441,
+    "total_question_types": 76004,
+    "coverage_at_10pct": 89.21,
+    "coverage_at_20pct": 95.26,
+    "coverage_at_30pct": 97.69,
+    "top_100_coverage": 38.62
+  },
+  "curve": [
+    {
+      "pct_question_types": 0.0,
+      "pct_queries_covered": 6.14
+    },
+    {
+      "pct_question_types": 0.5,
+      "pct_queries_covered": 52.64
+    },
+    {
+      "pct_question_types": 1.0,
+      "pct_queries_covered": 60.89
+    },
+    {
+      "pct_question_types": 1.5,
+      "pct_queries_covered": 65.86
+    },
+    {
+      "pct_question_types": 2.0,
+      "pct_queries_covered": 69.39
+    },
+    {
+      "pct_question_types": 2.5,
+      "pct_queries_covered": 72.18
+    },
+    {
+      "pct_question_types": 3.0,
+      "pct_queries_covered": 74.47
+    },
+    {
+      "pct_question_types": 3.5,
+      "pct_queries_covered": 76.43
+    },
+    {
+      "pct_question_types": 4.0,
+      "pct_queries_covered": 78.13
+    },
+    {
+      "pct_question_types": 4.5,
+      "pct_queries_covered": 79.63
+    },
+    {
+      "pct_question_types": 5.0,
+      "pct_queries_covered": 80.96
+    },
+    {
+      "pct_question_types": 5.5,
+      "pct_queries_covered": 82.16
+    },
+    {
+      "pct_question_types": 6.0,
+      "pct_queries_covered": 83.25
+    },
+    {
+      "pct_question_types": 6.5,
+      "pct_queries_covered": 84.24
+    },
+    {
+      "pct_question_types": 7.0,
+      "pct_queries_covered": 85.15
+    },
+    {
+      "pct_question_types": 7.5,
+      "pct_queries_covered": 85.98
+    },
+    {
+      "pct_question_types": 8.0,
+      "pct_queries_covered": 86.73
+    },
+    {
+      "pct_question_types": 8.5,
+      "pct_queries_covered": 87.43
+    },
+    {
+      "pct_question_types": 9.0,
+      "pct_queries_covered": 88.07
+    },
+    {
+      "pct_question_types": 9.5,
+      "pct_queries_covered": 88.66
+    },
+    {
+      "pct_question_types": 10.0,
+      "pct_queries_covered": 89.21
+    },
+    {
+      "pct_question_types": 10.5,
+      "pct_queries_covered": 89.72
+    },
+    {
+      "pct_question_types": 11.0,
+      "pct_queries_covered": 90.19
+    },
+    {
+      "pct_question_types": 11.5,
+      "pct_queries_covered": 90.63
+    },
+    {
+      "pct_question_types": 12.0,
+      "pct_queries_covered": 91.04
+    },
+    {
+      "pct_question_types": 12.5,
+      "pct_queries_covered": 91.42
+    },
+    {
+      "pct_question_types": 13.0,
+      "pct_queries_covered": 91.79
+    },
+    {
+      "pct_question_types": 13.5,
+      "pct_queries_covered": 92.13
+    },
+    {
+      "pct_question_types": 14.0,
+      "pct_queries_covered": 92.45
+    },
+    {
+      "pct_question_types": 14.5,
+      "pct_queries_covered": 92.75
+    },
+    {
+      "pct_question_types": 15.0,
+      "pct_queries_covered": 93.04
+    },
+    {
+      "pct_question_types": 15.5,
+      "pct_queries_covered": 93.31
+    },
+    {
+      "pct_question_types": 16.0,
+      "pct_queries_covered": 93.57
+    },
+    {
+      "pct_question_types": 16.5,
+      "pct_queries_covered": 93.82
+    },
+    {
+      "pct_question_types": 17.0,
+      "pct_queries_covered": 94.06
+    },
+    {
+      "pct_question_types": 17.5,
+      "pct_queries_covered": 94.28
+    },
+    {
+      "pct_question_types": 18.0,
+      "pct_queries_covered": 94.49
+    },
+    {
+      "pct_question_types": 18.5,
+      "pct_queries_covered": 94.7
+    },
+    {
+      "pct_question_types": 19.0,
+      "pct_queries_covered": 94.89
+    },
+    {
+      "pct_question_types": 19.5,
+      "pct_queries_covered": 95.08
+    },
+    {
+      "pct_question_types": 20.0,
+      "pct_queries_covered": 95.26
+    },
+    {
+      "pct_question_types": 20.5,
+      "pct_queries_covered": 95.43
+    },
+    {
+      "pct_question_types": 21.0,
+      "pct_queries_covered": 95.59
+    },
+    {
+      "pct_question_types": 21.5,
+      "pct_queries_covered": 95.75
+    },
+    {
+      "pct_question_types": 22.0,
+      "pct_queries_covered": 95.9
+    },
+    {
+      "pct_question_types": 22.5,
+      "pct_queries_covered": 96.05
+    },
+    {
+      "pct_question_types": 23.0,
+      "pct_queries_covered": 96.19
+    },
+    {
+      "pct_question_types": 23.5,
+      "pct_queries_covered": 96.32
+    },
+    {
+      "pct_question_types": 24.0,
+      "pct_queries_covered": 96.45
+    },
+    {
+      "pct_question_types": 24.5,
+      "pct_queries_covered": 96.58
+    },
+    {
+      "pct_question_types": 25.0,
+      "pct_queries_covered": 96.7
+    },
+    {
+      "pct_question_types": 25.5,
+      "pct_queries_covered": 96.82
+    },
+    {
+      "pct_question_types": 26.0,
+      "pct_queries_covered": 96.93
+    },
+    {
+      "pct_question_types": 26.5,
+      "pct_queries_covered": 97.03
+    },
+    {
+      "pct_question_types": 27.0,
+      "pct_queries_covered": 97.14
+    },
+    {
+      "pct_question_types": 27.5,
+      "pct_queries_covered": 97.24
+    },
+    {
+      "pct_question_types": 28.0,
+      "pct_queries_covered": 97.34
+    },
+    {
+      "pct_question_types": 28.5,
+      "pct_queries_covered": 97.43
+    },
+    {
+      "pct_question_types": 29.0,
+      "pct_queries_covered": 97.52
+    },
+    {
+      "pct_question_types": 29.5,
+      "pct_queries_covered": 97.61
+    },
+    {
+      "pct_question_types": 30.0,
+      "pct_queries_covered": 97.69
+    },
+    {
+      "pct_question_types": 30.5,
+      "pct_queries_covered": 97.78
+    },
+    {
+      "pct_question_types": 31.0,
+      "pct_queries_covered": 97.85
+    },
+    {
+      "pct_question_types": 31.5,
+      "pct_queries_covered": 97.93
+    },
+    {
+      "pct_question_types": 32.0,
+      "pct_queries_covered": 98.0
+    },
+    {
+      "pct_question_types": 32.5,
+      "pct_queries_covered": 98.08
+    },
+    {
+      "pct_question_types": 33.0,
+      "pct_queries_covered": 98.14
+    },
+    {
+      "pct_question_types": 33.5,
+      "pct_queries_covered": 98.21
+    },
+    {
+      "pct_question_types": 34.0,
+      "pct_queries_covered": 98.27
+    },
+    {
+      "pct_question_types": 34.5,
+      "pct_queries_covered": 98.33
+    },
+    {
+      "pct_question_types": 35.0,
+      "pct_queries_covered": 98.4
+    },
+    {
+      "pct_question_types": 35.5,
+      "pct_queries_covered": 98.45
+    },
+    {
+      "pct_question_types": 36.0,
+      "pct_queries_covered": 98.51
+    },
+    {
+      "pct_question_types": 36.5,
+      "pct_queries_covered": 98.56
+    },
+    {
+      "pct_question_types": 37.0,
+      "pct_queries_covered": 98.61
+    },
+    {
+      "pct_question_types": 37.5,
+      "pct_queries_covered": 98.66
+    },
+    {
+      "pct_question_types": 38.0,
+      "pct_queries_covered": 98.71
+    },
+    {
+      "pct_question_types": 38.5,
+      "pct_queries_covered": 98.75
+    },
+    {
+      "pct_question_types": 39.0,
+      "pct_queries_covered": 98.8
+    },
+    {
+      "pct_question_types": 39.5,
+      "pct_queries_covered": 98.84
+    },
+    {
+      "pct_question_types": 40.0,
+      "pct_queries_covered": 98.88
+    },
+    {
+      "pct_question_types": 40.5,
+      "pct_queries_covered": 98.92
+    },
+    {
+      "pct_question_types": 41.0,
+      "pct_queries_covered": 98.95
+    },
+    {
+      "pct_question_types": 41.5,
+      "pct_queries_covered": 98.99
+    },
+    {
+      "pct_question_types": 42.0,
+      "pct_queries_covered": 99.03
+    },
+    {
+      "pct_question_types": 42.5,
+      "pct_queries_covered": 99.06
+    },
+    {
+      "pct_question_types": 43.0,
+      "pct_queries_covered": 99.09
+    },
+    {
+      "pct_question_types": 43.5,
+      "pct_queries_covered": 99.12
+    },
+    {
+      "pct_question_types": 44.0,
+      "pct_queries_covered": 99.15
+    },
+    {
+      "pct_question_types": 44.5,
+      "pct_queries_covered": 99.17
+    },
+    {
+      "pct_question_types": 45.0,
+      "pct_queries_covered": 99.2
+    },
+    {
+      "pct_question_types": 45.5,
+      "pct_queries_covered": 99.22
+    },
+    {
+      "pct_question_types": 46.0,
+      "pct_queries_covered": 99.25
+    },
+    {
+      "pct_question_types": 46.5,
+      "pct_queries_covered": 99.27
+    },
+    {
+      "pct_question_types": 47.0,
+      "pct_queries_covered": 99.29
+    },
+    {
+      "pct_question_types": 47.5,
+      "pct_queries_covered": 99.31
+    },
+    {
+      "pct_question_types": 48.0,
+      "pct_queries_covered": 99.33
+    },
+    {
+      "pct_question_types": 48.5,
+      "pct_queries_covered": 99.35
+    },
+    {
+      "pct_question_types": 49.0,
+      "pct_queries_covered": 99.36
+    },
+    {
+      "pct_question_types": 49.5,
+      "pct_queries_covered": 99.38
+    },
+    {
+      "pct_question_types": 50.0,
+      "pct_queries_covered": 99.39
+    },
+    {
+      "pct_question_types": 50.5,
+      "pct_queries_covered": 99.41
+    },
+    {
+      "pct_question_types": 51.0,
+      "pct_queries_covered": 99.42
+    },
+    {
+      "pct_question_types": 51.5,
+      "pct_queries_covered": 99.44
+    },
+    {
+      "pct_question_types": 52.0,
+      "pct_queries_covered": 99.45
+    },
+    {
+      "pct_question_types": 52.5,
+      "pct_queries_covered": 99.46
+    },
+    {
+      "pct_question_types": 53.0,
+      "pct_queries_covered": 99.47
+    },
+    {
+      "pct_question_types": 53.5,
+      "pct_queries_covered": 99.48
+    },
+    {
+      "pct_question_types": 54.0,
+      "pct_queries_covered": 99.49
+    },
+    {
+      "pct_question_types": 54.5,
+      "pct_queries_covered": 99.5
+    },
+    {
+      "pct_question_types": 55.0,
+      "pct_queries_covered": 99.51
+    },
+    {
+      "pct_question_types": 55.5,
+      "pct_queries_covered": 99.52
+    },
+    {
+      "pct_question_types": 56.0,
+      "pct_queries_covered": 99.53
+    },
+    {
+      "pct_question_types": 56.5,
+      "pct_queries_covered": 99.54
+    },
+    {
+      "pct_question_types": 57.0,
+      "pct_queries_covered": 99.55
+    },
+    {
+      "pct_question_types": 57.5,
+      "pct_queries_covered": 99.56
+    },
+    {
+      "pct_question_types": 58.0,
+      "pct_queries_covered": 99.57
+    },
+    {
+      "pct_question_types": 58.5,
+      "pct_queries_covered": 99.58
+    },
+    {
+      "pct_question_types": 59.0,
+      "pct_queries_covered": 99.58
+    },
+    {
+      "pct_question_types": 59.5,
+      "pct_queries_covered": 99.59
+    },
+    {
+      "pct_question_types": 60.0,
+      "pct_queries_covered": 99.59
+    },
+    {
+      "pct_question_types": 60.5,
+      "pct_queries_covered": 99.6
+    },
+    {
+      "pct_question_types": 61.0,
+      "pct_queries_covered": 99.6
+    },
+    {
+      "pct_question_types": 61.5,
+      "pct_queries_covered": 99.61
+    },
+    {
+      "pct_question_types": 62.0,
+      "pct_queries_covered": 99.61
+    },
+    {
+      "pct_question_types": 62.5,
+      "pct_queries_covered": 99.62
+    },
+    {
+      "pct_question_types": 63.0,
+      "pct_queries_covered": 99.62
+    },
+    {
+      "pct_question_types": 63.5,
+      "pct_queries_covered": 99.63
+    },
+    {
+      "pct_question_types": 64.0,
+      "pct_queries_covered": 99.63
+    },
+    {
+      "pct_question_types": 64.5,
+      "pct_queries_covered": 99.64
+    },
+    {
+      "pct_question_types": 65.0,
+      "pct_queries_covered": 99.64
+    },
+    {
+      "pct_question_types": 65.5,
+      "pct_queries_covered": 99.65
+    },
+    {
+      "pct_question_types": 66.0,
+      "pct_queries_covered": 99.65
+    },
+    {
+      "pct_question_types": 66.5,
+      "pct_queries_covered": 99.66
+    },
+    {
+      "pct_question_types": 67.0,
+      "pct_queries_covered": 99.66
+    },
+    {
+      "pct_question_types": 67.5,
+      "pct_queries_covered": 99.67
+    },
+    {
+      "pct_question_types": 68.0,
+      "pct_queries_covered": 99.67
+    },
+    {
+      "pct_question_types": 68.5,
+      "pct_queries_covered": 99.68
+    },
+    {
+      "pct_question_types": 69.0,
+      "pct_queries_covered": 99.68
+    },
+    {
+      "pct_question_types": 69.5,
+      "pct_queries_covered": 99.69
+    },
+    {
+      "pct_question_types": 70.0,
+      "pct_queries_covered": 99.69
+    },
+    {
+      "pct_question_types": 70.5,
+      "pct_queries_covered": 99.7
+    },
+    {
+      "pct_question_types": 71.0,
+      "pct_queries_covered": 99.7
+    },
+    {
+      "pct_question_types": 71.5,
+      "pct_queries_covered": 99.71
+    },
+    {
+      "pct_question_types": 72.0,
+      "pct_queries_covered": 99.71
+    },
+    {
+      "pct_question_types": 72.5,
+      "pct_queries_covered": 99.72
+    },
+    {
+      "pct_question_types": 73.0,
+      "pct_queries_covered": 99.72
+    },
+    {
+      "pct_question_types": 73.5,
+      "pct_queries_covered": 99.73
+    },
+    {
+      "pct_question_types": 74.0,
+      "pct_queries_covered": 99.73
+    },
+    {
+      "pct_question_types": 74.5,
+      "pct_queries_covered": 99.74
+    },
+    {
+      "pct_question_types": 75.0,
+      "pct_queries_covered": 99.74
+    },
+    {
+      "pct_question_types": 75.5,
+      "pct_queries_covered": 99.75
+    },
+    {
+      "pct_question_types": 76.0,
+      "pct_queries_covered": 99.75
+    },
+    {
+      "pct_question_types": 76.5,
+      "pct_queries_covered": 99.76
+    },
+    {
+      "pct_question_types": 77.0,
+      "pct_queries_covered": 99.76
+    },
+    {
+      "pct_question_types": 77.5,
+      "pct_queries_covered": 99.77
+    },
+    {
+      "pct_question_types": 78.0,
+      "pct_queries_covered": 99.78
+    },
+    {
+      "pct_question_types": 78.5,
+      "pct_queries_covered": 99.78
+    },
+    {
+      "pct_question_types": 79.0,
+      "pct_queries_covered": 99.79
+    },
+    {
+      "pct_question_types": 79.5,
+      "pct_queries_covered": 99.79
+    },
+    {
+      "pct_question_types": 80.0,
+      "pct_queries_covered": 99.8
+    },
+    {
+      "pct_question_types": 80.5,
+      "pct_queries_covered": 99.8
+    },
+    {
+      "pct_question_types": 81.0,
+      "pct_queries_covered": 99.81
+    },
+    {
+      "pct_question_types": 81.5,
+      "pct_queries_covered": 99.81
+    },
+    {
+      "pct_question_types": 82.0,
+      "pct_queries_covered": 99.82
+    },
+    {
+      "pct_question_types": 82.5,
+      "pct_queries_covered": 99.82
+    },
+    {
+      "pct_question_types": 83.0,
+      "pct_queries_covered": 99.83
+    },
+    {
+      "pct_question_types": 83.5,
+      "pct_queries_covered": 99.83
+    },
+    {
+      "pct_question_types": 84.0,
+      "pct_queries_covered": 99.84
+    },
+    {
+      "pct_question_types": 84.5,
+      "pct_queries_covered": 99.84
+    },
+    {
+      "pct_question_types": 85.0,
+      "pct_queries_covered": 99.85
+    },
+    {
+      "pct_question_types": 85.5,
+      "pct_queries_covered": 99.85
+    },
+    {
+      "pct_question_types": 86.0,
+      "pct_queries_covered": 99.86
+    },
+    {
+      "pct_question_types": 86.5,
+      "pct_queries_covered": 99.86
+    },
+    {
+      "pct_question_types": 87.0,
+      "pct_queries_covered": 99.87
+    },
+    {
+      "pct_question_types": 87.5,
+      "pct_queries_covered": 99.87
+    },
+    {
+      "pct_question_types": 88.0,
+      "pct_queries_covered": 99.88
+    },
+    {
+      "pct_question_types": 88.5,
+      "pct_queries_covered": 99.88
+    },
+    {
+      "pct_question_types": 89.0,
+      "pct_queries_covered": 99.89
+    },
+    {
+      "pct_question_types": 89.5,
+      "pct_queries_covered": 99.89
+    },
+    {
+      "pct_question_types": 90.0,
+      "pct_queries_covered": 99.9
+    },
+    {
+      "pct_question_types": 90.5,
+      "pct_queries_covered": 99.9
+    },
+    {
+      "pct_question_types": 91.0,
+      "pct_queries_covered": 99.91
+    },
+    {
+      "pct_question_types": 91.5,
+      "pct_queries_covered": 99.91
+    },
+    {
+      "pct_question_types": 92.0,
+      "pct_queries_covered": 99.92
+    },
+    {
+      "pct_question_types": 92.5,
+      "pct_queries_covered": 99.92
+    },
+    {
+      "pct_question_types": 93.0,
+      "pct_queries_covered": 99.93
+    },
+    {
+      "pct_question_types": 93.5,
+      "pct_queries_covered": 99.93
+    },
+    {
+      "pct_question_types": 94.0,
+      "pct_queries_covered": 99.94
+    },
+    {
+      "pct_question_types": 94.5,
+      "pct_queries_covered": 99.94
+    },
+    {
+      "pct_question_types": 95.0,
+      "pct_queries_covered": 99.95
+    },
+    {
+      "pct_question_types": 95.5,
+      "pct_queries_covered": 99.95
+    },
+    {
+      "pct_question_types": 96.0,
+      "pct_queries_covered": 99.96
+    },
+    {
+      "pct_question_types": 96.5,
+      "pct_queries_covered": 99.96
+    },
+    {
+      "pct_question_types": 97.0,
+      "pct_queries_covered": 99.97
+    },
+    {
+      "pct_question_types": 97.5,
+      "pct_queries_covered": 99.97
+    },
+    {
+      "pct_question_types": 98.0,
+      "pct_queries_covered": 99.98
+    },
+    {
+      "pct_question_types": 98.5,
+      "pct_queries_covered": 99.98
+    },
+    {
+      "pct_question_types": 99.0,
+      "pct_queries_covered": 99.99
+    },
+    {
+      "pct_question_types": 99.5,
+      "pct_queries_covered": 99.99
+    },
+    {
+      "pct_question_types": 100.0,
+      "pct_queries_covered": 100.0
+    }
+  ]
+}
