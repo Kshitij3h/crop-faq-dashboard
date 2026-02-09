@@ -6,6 +6,7 @@ import {
     Title,
     Tooltip,
     Legend,
+    BarController
 } from 'chart.js'
 import { Bar } from 'react-chartjs-2'
 
@@ -15,7 +16,8 @@ ChartJS.register(
     BarElement,
     Title,
     Tooltip,
-    Legend
+    Legend,
+    BarController
 )
 
 export default function TopCrops({ crops }) {

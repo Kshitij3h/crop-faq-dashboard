@@ -6,7 +6,8 @@ import {
     Title,
     Tooltip,
     Legend,
-    ArcElement
+    ArcElement,
+    DoughnutController
 } from 'chart.js'
 import { Doughnut } from 'react-chartjs-2'
 
@@ -17,7 +18,8 @@ ChartJS.register(
     Title,
     Tooltip,
     Legend,
-    ArcElement
+    ArcElement,
+    DoughnutController
 )
 
 export default function Top100Insight({ saturationData }) {
